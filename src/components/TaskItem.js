@@ -6,10 +6,7 @@ import { DeleteHandlerContext } from "../App";
 const TaskItem = ({ task }) => {
 	const deleteHandler = useContext(DeleteHandlerContext);
 
-	// edit task item
-	const editHandler = (id) => {
-		console.log(id);
-	};
+	
 	return (
 		<div className="task-item flex justify-between items-center bg-gray-800 p-5 rounded hover:bg-gradient-to-r hover:from-teal-800 hover:to-gray-800 group">
 			<div className="task-item-left flex gap-2">
