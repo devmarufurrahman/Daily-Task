@@ -1,6 +1,13 @@
 import TaskItem from "./TaskItem";
 
-const TaskList = ({ tasks, error, loading }) => {
+const TaskList = ({
+	tasks,
+	error,
+	loading,
+	handleEditSubmit,
+	editingText,
+	setEditingText,
+}) => {
 	return (
 		<div
 			className=" bg-gray-900 p-10 container w-10/12
@@ -12,7 +19,13 @@ const TaskList = ({ tasks, error, loading }) => {
 			)}
 
 			{tasks.map((task) => (
-				<TaskItem task={task} key={task.id} />
+				<TaskItem
+					task={task}
+					key={task.id}
+					handleEditSubmit={handleEditSubmit}
+					editingText={editingText}
+					setEditingText={setEditingText}
+				/>
 			))}
 		</div>
 	);
