@@ -11,7 +11,7 @@ const TaskItem = ({ task, handleEditSubmit, editingText, setEditingText }) => {
 	const [isCheck, setIsCheck] = useState(false);
 
 	return (
-		<div className="task-item flex justify-between items-center bg-gray-800 p-5 rounded hover:bg-gradient-to-r hover:from-teal-800 hover:to-gray-800 group">
+		<div className="task-item flex flex-col sm:flex-row sm:justify-between items-center bg-gray-800 p-5 rounded hover:bg-gradient-to-r hover:from-teal-800 hover:to-gray-800 group">
 			<div className="task-item-left flex gap-2">
 				<span>
 					<input

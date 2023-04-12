@@ -10,7 +10,7 @@ const TaskList = ({
 }) => {
 	return (
 		<div
-			className=" bg-gray-900 p-10 container w-10/12
+			className=" bg-gray-900 p-10 container 
 		 mx-auto flex flex-col gap-3">
 			{loading ? (
 				<p className="text-center">{error ? error : "Loading......"}</p>
